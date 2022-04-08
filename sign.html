@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+              rel="stylesheet">
+        <style>
+          * {
+            font-family: 'Poppins', sans-serif;
+          }
+          /* sign */
+          .sign {
+              position: relative;
+              background: #ceb7a1;
+              height: 660px;
+              background: url('images/sign2.jpg');
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+          }
+
+          .sign .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgb(3 2 6 / 69%);
+              -webkit-display: flex;
+              -moz-display: flex;
+              -ms-display: flex;
+              -o-display: flex;
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              -webkit-flex-wrap: wrap;
+              -moz-flex-wrap: wrap;
+              -o-flex-wrap: wrap;
+              flex-wrap: wrap;
+          }
+
+          h2 {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 15px 5px;
+            border-bottom: 2px solid #fff;
+            width: fit-content;
+            margin: 30px auto;
+            letter-spacing: 1.5px;
+          }
+
+          h2::before {
+              content: '';
+              position: absolute;
+              bottom: -8px;
+              left: 10%;
+              width: 80%;
+              background: #FFC107;
+              height: 2px;
+          }
+
+          p {
+            color: #e2e2e2;
+            text-align: center;
+            letter-spacing: 1.6px;
+            margin-bottom: 20px;
+          }
+
+          .sign .content {
+              width: 45%;
+          }
+
+          .sign form .form-group {
+              margin-bottom: 30px;
+          }
+
+          .sign form .form-group input {
+              height: 55px;
+              background: rgb(96 125 139 / 64%);
+              font-size: 16px;
+              color: #fff;
+          }
+
+          .sign form .form-group input::placeholder {
+              color: #fff;
+              letter-spacing: 1.3px;
+          }
+
+          .sign .btn {
+              background: #fff;
+              color: #100F22;
+              letter-spacing: 1.3px;
+          }
+
+          .sign .btn:focus {
+              outline: none;
+              background: #e9b006;
+          }
+
+          .log {
+            width: 100%;
+            text-align: center;
+          }
+
+          .log a {
+            font-size: 20px;
+            color: #fff;
+            letter-spacing: 5px;
+            text-decoration: underline;
+          }
+
+          .log a:hover {
+            color: #FFC107;
+          }
+
+          /* meadia */
+          @media(max-width:920px) {
+
+            .sign .content {
+              width: 440px;
+            }
+
+            h2 {
+              font-size: 25px;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        </style>
+    </head>
+    <body>
+       <!-- sign -->
+       <div class="sign">
+        <div class="overlay">
+          <div class="content">
+            <h2>Sign Up</h2>
+            <p>welcome to Zay investment
+             Thank you for choosing to invest in a leading, professional, and trusted company</p>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control input-lg" placeholder="Enter your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Enter your Wallet code">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control input-lg" placeholder="Enter your password">
+              </div>
+              <div class="form-group">
+                  <button type="button" class="btn btn-lg btn-block">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="log">
+            <a href="login.html">login</a>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/invest.js"></script>
+    </body>
+</html>

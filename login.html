@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>login</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+              rel="stylesheet">
+        <style>
+          * {
+            font-family: 'Poppins', sans-serif;
+          }
+          /* sign */
+          .login {
+              position: relative;
+              background: #ceb7a1;
+              height: 660px;
+              background: url('images/sign2.jpg');
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+               background-size: cover;
+          }
+
+          .login .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgb(3 2 6 / 69%);
+              -webkit-display: flex;
+              -moz-display: flex;
+              -ms-display: flex;
+              -o-display: flex;
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              -webkit-flex-wrap: wrap;
+              -moz-flex-wrap: wrap;
+              -o-flex-wrap: wrap;
+              flex-wrap: wrap;
+          }
+
+          h2 {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 15px 5px;
+            border-bottom: 2px solid #fff;
+            width: fit-content;
+            margin: 40px auto;
+            letter-spacing: 1.5px;
+          }
+
+          h2::before {
+              content: '';
+              position: absolute;
+              bottom: -8px;
+              left: 10%;
+              width: 80%;
+              background: #FFC107;
+              height: 2px;
+          } 
+          
+           .content {
+              width: 45%;
+          }
+
+          form .form-group {
+              margin-bottom: 30px;
+          }
+
+           form .form-group input {
+              height: 55px;
+              background: rgb(96 125 139 / 64%);
+              font-size: 16px;
+              color: #fff;
+          }
+
+          form .form-group input::placeholder {
+              color: #fff;
+              letter-spacing: 1.3px;
+          }
+
+          .btn {
+              background: #fff;
+              color: #100F22;
+              letter-spacing: 1.3px;
+          }
+
+         .login .btn:focus {
+              outline: none;
+              background: #e9b006;
+          }
+
+          .sign {
+            width: 100%;
+            text-align: center;
+          }
+
+          .sign a {
+            font-size: 20px;
+            color: #fff;
+            letter-spacing: 5px;
+            text-decoration: underline;
+          }
+
+          .sign a:hover {
+            color: #FFC107;
+          }
+
+           /* meadia */
+           @media(max-width:920px) {
+
+            .login .content {
+              width: 440px;
+            }
+
+            .login h2 {
+              font-size: 25px;
+            }
+
+          }
+        </style>
+    </head>
+    <body>
+       <!-- sign -->
+       <div class="login">
+        <div class="overlay">
+          <div class="content">
+            <h2>Login</h2>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Enter your name or email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control input-lg" placeholder="Enter your password">
+              </div>
+              <div class="form-group">
+                  <button type="button" class="btn btn-lg btn-block">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="sign">
+            <a href="sign.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/invest.js"></script>
+    </body>
+</html>
